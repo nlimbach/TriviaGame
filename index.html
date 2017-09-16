@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia Game</title>
+
+    <link rel="stylesheet" type = "text/css" href="assets/css/style.css">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+</head>
+<body>
+<div class = "container">
+    <div class ="row">
+        <div class = "jumbotron">
+            <h1 class ="text-center">Let's Play Trivia!</h1>
+            <div id="show-number"></div>
+        </div>
+    </div>
+</div>
+<div class ="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class = "col-md-6">
+        <button type="button" id ="start" class="btn btn-primary btn-block" align ="center">Start!</button>
+    </div>
+</div>
+
+    <div class ="row">
+
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class = "question">
+                    <div class="panel-heading">
+                        <h3 class="panel-title " align="center">Which NHL team won the Stanley Cup in 2009</h3>
+                        <hr>
+                    </div>
+
+                    <div class="panel-body">
+                        <div id = "teams" class = "text-center">
+                            <input type="radio" id="wild" name="group1" value="no"> Minnesota Wild
+                            <input type ="radio" id="tampa" name ="group1" value ="no"> Tampa Bay Lightning
+                            <input type = "radio" id ="pens" name ="group1" value ="yes"> Pittsburgh Penguins
+                            <input type = "radio" id = "caps" name ="group1" value = "no">Washington Capitals
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class ="row">
+
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class = "question">
+                    <div class="panel-heading">
+                        <h3 class="panel-title " align="center">What is the date the Titanic sunk?</h3>
+                        <hr>
+                    </div>
+
+                    <div class="panel-body">
+                        <div id = "dates" class = "text-center">
+                            <input type="radio" id="1911" name="group2" value="no"> April 12, 1911
+                            <input type ="radio" id="1912" name ="group2" value ="no"> April 12, 1912
+                            <input type = "radio" id ="april1912" name ="group2" value ="yes"> April 14, 1912
+                            <input type = "radio" id = "1914" name ="group2" value = "no">April 14, 1914
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class ="row">
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class = "question">
+                <div class="panel-heading">
+                    <h3 class="panel-title " align="center">What city holds the record for most superbowls won?</h3>
+                    <hr>
+                </div>
+
+                <div class="panel-body">
+                    <div id = "football" class = "text-center">
+                        <input type="radio" id="redskins" name="group3" value="no"> Washington Redskins
+                        <input type ="radio" id="browns" name ="group3" value ="no"> Cleveland Browns (lol)
+                        <input type = "radio" id ="vikings" name ="group3" value ="no"> Minnesota Vikings
+                        <input type = "radio" id = "steelers" name ="group3" value = "yes">Pittsburgh Steelers
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class ="row">
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class = "question">
+                <div class="panel-heading">
+                    <h3 class="panel-title " align="center">What was the name of Atlanta's NHL team that moved to Winnipeg </h3>
+                    <hr>
+                </div>
+
+                <div class="panel-body">
+                    <div id = "nhl" class = "text-center">
+                        <input type="radio" id="knights" name="group4" value="no"> Atlanta Knights
+                        <input type ="radio" id="thrashers" name ="group4" value ="yes"> Atlanta Thrashers
+                        <input type = "radio" id ="united" name ="group4" value ="yes"> Atlanta United
+                        <input type = "radio" id = "Chiefs" name ="group4" value = "no">Atlanta Chiefs
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class ="row">
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class = "question">
+                <div class="panel-heading">
+                    <h3 class="panel-title " align="center">What is the correct response to the following statement: Left Side!</h3>
+                    <hr>
+                </div>
+
+                <div class="panel-body">
+                    <div id = "StrongSide" class = "text-center">
+                        <input type="radio" id="strong" name="group5" value="yes"> Strong Side!
+                        <input type ="radio" id="right" name ="group5" value ="no"> Right Side!
+                        <input type = "radio" id ="Blind" name ="group5" value ="no"> Blind Side!
+                        <input type = "radio" id = "wrong" name ="group5" value = "no">Wrong Side!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class ="row">
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class = "question">
+                <div class="panel-heading">
+                    <h3 class="panel-title " align="center">What movie is the previous quote from?</h3>
+                    <hr>
+                </div>
+
+                <div class="panel-body">
+                    <div id = "movies" class = "text-center">
+                        <input type="radio" id="miracle" name="group6" value="no"> Miracle
+                        <input type ="radio" id="Hoosiers" name ="group6" value ="no"> Hoosiers
+                        <input type = "radio" id ="BlindSide" name ="group6" value ="no"> The Blind Side
+                        <input type = "radio" id = "Titans" name ="group6" value = "yes">Remember the Titans
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class ="row">
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class = "question">
+                <div class="panel-heading">
+                    <h3 class="panel-title " align="center">Which US city will be getting a new NHL team in the 2018-2019 season?</h3>
+                    <hr>
+                </div>
+
+                <div class="panel-body">
+                    <div id = "newTeam" class = "text-center">
+                        <input type="radio" id="atlanta" name="group7" value="no"> Atlanta
+                        <input type ="radio" id="vegas" name ="group7" value ="yes"> Las Vegas
+                        <input type = "radio" id ="Albany" name ="group7" value ="no"> Albany
+                        <input type = "radio" id = "Seattle" name ="group7" value = "no">Seattle
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- JAVASCRIPT  -->
+<!-- ========================================= -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+</body>
+</html>
